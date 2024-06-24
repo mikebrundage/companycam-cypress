@@ -19,7 +19,7 @@ describe('User can interact with projects', () => {
     it('Create a new project', () => {
         projects.createNewProjectByLocation('Whitewater Center Parkway')
 
-        // Cypress may have s a cleaner way to handle the promise so that we have projectId
+        // Cypress may have a cleaner way to handle the promise so that we have projectId
         // before I use it to delete the test data
         util.getProjectId().then(projectId => {
             projects.enterDescription('This is a test description')
